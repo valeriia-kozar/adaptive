@@ -47,7 +47,6 @@ ul {
 	line-height: 24px;
 }
 
-
 .img {
 	width: 1024px;
 }
@@ -63,8 +62,7 @@ ul {
 	margin: 40px 0;
 }
 
-.main-title,
-.footer-title {
+.title {
 	font-size: 40px;
 	line-height: 49px;
 	text-align: center;
@@ -75,12 +73,17 @@ ul {
 	padding: 16px 0;
 }
 
-.box-wrap {
+.history-items {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 20px;
 	margin: 60px 0;
+}
+
+.count-num {
+	font-size: 48px;
+	line-height: 40px;
 }
 
 .first-box,
@@ -89,12 +92,14 @@ ul {
 	height: 395px;
 	background-color: #000;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
-.box-text {
+.history-text {
 	font-size: 20px;
 	color: #fff;
-	padding: 94px 50px;
+	padding: 0 50px;
 }
 
 .footer {
@@ -114,6 +119,12 @@ ul {
 	border: 1px solid #000;
 }
 
+.input::placeholder {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: 'Montserrat';
+}
+
 .btn {
 	cursor: pointer;
 	position: absolute;
@@ -127,6 +138,7 @@ ul {
 	background: #000;
 	border-radius: 8px;
 	text-transform: uppercase;
+	border: none;
 }
 
 
@@ -138,7 +150,6 @@ ul {
 
 
 	.content {
-		max-width: 919px;
 		padding: 20px;
 	}
 
@@ -158,6 +169,7 @@ ul {
 	}
 
 	.img {
+		max-width: 919px;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -260,12 +272,12 @@ ul {
 
 	.menu-open .burger-icon::after {
 		transform: rotate(45deg);
-		top: -26px;
+		top: -10px;
 	}
 
 	.menu-open .burger-icon::before {
 		transform: rotate(-45deg);
-		top: 0px;
+		top: 15px;
 	}
 
 	.menu-open .burger-icon::after,
@@ -354,7 +366,7 @@ ul {
 		max-width: 100%;
 	}
 
-	.box-wrap {
+	.history-items {
 		display: block;
 		flex-direction: column;
 		margin: 0;
@@ -370,7 +382,7 @@ ul {
 		height: 275px;
 	}
 
-	.box-text {
+	.history-text {
 		padding: 20px;
 		font-size: 17px;
 	}
